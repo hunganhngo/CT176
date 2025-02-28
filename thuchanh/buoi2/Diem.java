@@ -6,16 +6,15 @@ public class Diem {
 		x = y = 0;
 	}
 	public Diem(int a, int b) {
-		x = a;
-		y = b;
+		this.x = a;
+		this.y = b;
 	}
-	public void nhapDiem() {
-		Scanner sc = new Scanner(System.in);
+	public void nhapDiem(Scanner sc) {
 		System.out.print("x = ");
 		x = sc.nextInt();
 		System.out.print("y = ");
 		y = sc.nextInt();
-		sc.close();
+		//sc.close();
 	}
 	public void hienThi() {
 		System.out.println("(x, y) = (" + x + ", " + y + ")");

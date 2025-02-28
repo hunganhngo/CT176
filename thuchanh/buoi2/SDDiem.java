@@ -5,7 +5,8 @@ public class SDDiem {
 		Diem A = new Diem(3, 4);
 		A.hienThi();
 		Diem B = new Diem();
-		B.nhapDiem();
+		java.util.Scanner scanner = new java.util.Scanner(System.in);
+		B.nhapDiem(scanner);
 		B.hienThi();
 		Diem C = new Diem(-B.x, -B.y);
 		C.hienThi();
