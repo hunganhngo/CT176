@@ -2,7 +2,7 @@ package buoi2;
 import java.util.Scanner;
 public class Date {
 	int ngay, thang, nam;
-	public Date() {
+	public Date(Date ngaySinh) {
 		ngay = thang = nam = 0;
 	}
 	public Date(int a, int b, int c) {
@@ -10,8 +10,14 @@ public class Date {
 		thang = b;
 		nam = c;
 	}
+	public Date() {
+		//TODO Auto-generated constructor stub
+	}
 	public void hienThiDate() {
 		System.out.println(ngay + "/" + thang + "/" + nam);
+	}
+	public String toString() {
+		return ngay + "/" + thang + "/" + nam;
 	}
 	public boolean hopLe() {
 		int max[] = {0, 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
@@ -31,7 +37,6 @@ public class Date {
 			System.out.print("Nhap nam: ");
 			nam = sc.nextInt();
 		} while (!hopLe());
-		sc.close();
 	}
 	public Date ngayHomSau() {
 		Date ngayhomsau = new Date(ngay + 1, thang, nam);

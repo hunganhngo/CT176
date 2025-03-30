@@ -1,7 +1,6 @@
 package buoi3;
 import buoi2.Diem;
 import java.lang.Math;
-import java.util.Scanner;
 public class DoanThang {
 	private Diem d1, d2;
 	public DoanThang() {
@@ -16,11 +15,11 @@ public class DoanThang {
 		d1 = new Diem(ax, ay);
 		d2 = new Diem(bx, by);
 	}
-	public void nhap(Scanner sc) {
+	public void nhap() {
 		System.out.println("Nhap diem d1");
-		d1.nhapDiem(sc);
+		d1.nhapDiem();
 		System.out.println("Nhap diem d2");
-		d2.nhapDiem(sc);
+		d2.nhapDiem();
 	}
 	public void hienThiMut() {
 		System.out.println("Gia tri hai dau mut cua doan thang");

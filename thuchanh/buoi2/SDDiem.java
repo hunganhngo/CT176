@@ -5,10 +5,9 @@ public class SDDiem {
 		Diem A = new Diem(3, 4);
 		A.hienThi();
 		Diem B = new Diem();
-		java.util.Scanner scanner = new java.util.Scanner(System.in);
-		B.nhapDiem(scanner);
+		B.nhapDiem();
 		B.hienThi();
-		Diem C = new Diem(-B.x, -B.y);
+		Diem C = new Diem(-B.giaTriX(), -B.giaTriY());
 		C.hienThi();
 		float D = B.khoangCach();
 		System.out.println(D);

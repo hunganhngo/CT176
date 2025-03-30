@@ -9,9 +9,11 @@ public class Diem {
 		this.x = a;
 		this.y = b;
 	}
-	public void nhapDiem(Scanner sc) {
+	public void nhapDiem() {
+		Scanner sc = new Scanner(System.in);
 		System.out.print("x = ");
 		x = sc.nextInt();
+		sc.nextLine();
 		System.out.print("y = ");
 		y = sc.nextInt();
 		//sc.close();
@@ -34,5 +36,8 @@ public class Diem {
 	}
 	public float khoangCach(Diem d) {
 		return (float) Math.sqrt(Math.pow((d.x - x), 2) + (d.y - y)*(d.y - y));
+	}
+	public String toString() {
+		return "(" + x + ", " + y + ")";
 	}
 }
